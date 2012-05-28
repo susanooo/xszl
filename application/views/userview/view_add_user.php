@@ -12,6 +12,71 @@
    var StyleFile = "theme" + document.cookie.charAt(6) + ".css";
    document.writeln('<link rel="stylesheet" type="text/css" href="http://localhost/xszl/css/' + StyleFile + '">');
 </script>
+
+<script type="text/javascript">
+//非空验证
+function validate_required(field,alerttxt)
+{
+	with (field)
+  	{
+  		if (value==null||value=="")
+    		{
+    			alert(alerttxt);
+    			return false
+    		}
+  		else 
+  	  		{
+  	  			return true
+  	  		}
+  	}
+}
+//密码验证(一致)
+function validate_password(field1,field2,alerttxt)
+{
+	with (field2)
+  	{
+  		if (field2.value != field1.value)
+    		{
+    			alert(alerttxt);
+    			return false
+    		}
+  		else 
+  	  		{
+  	  			return true
+  	  		}
+  	}
+}
+
+function validate_form(thisform)
+{
+	with (thisform)
+  	{
+  		if (validate_required(loginname,"用户名不能为空!")==false)
+    	{
+  	    	loginname.focus();
+  	    	return false
+  		}
+  		if (validate_required(name,"真实姓名不能为空!")==false)
+    	{
+  	    	name.focus();
+  	    	return false
+  		}
+  		if (validate_required(pwd,"密码不能为空!")==false)
+    	{
+  	    	pwd.focus();
+  	    	return false
+  		}
+  		if (validate_password(pwd,pwd2,"密码不一致，请重新输入")==false)
+  		{
+			pwd2.focus();
+			return false;
+  	  	}
+
+	}
+}
+
+</script>
+
 <!--[if IE]>
 <link rel="stylesheet" type="text/css" href="http://localhost/xszl/css/ie-sucks.css" />
 <![endif]-->
@@ -25,23 +90,23 @@
              
                 <div id="box">
                 	<h3 id="adduser">添加用户</h3>
-                    <form id="form" action="<?php echo site_url('usercon/con_user/insert');?>" method="post">
+                    <form id="form" onsubmit="return validate_form(this)" action="<?php echo site_url('usercon/con_user/insert');?>" method="post">
                       <fieldset id="personal">
                         <legend>必填信息</legend>
                         <label for="loginname">用户名 : </label> 
-                        <input name="loginname" id="lastname" type="text" tabindex="1" />
+                        <input name="loginname" id="lastname" type="text" tabindex="1" /><font color="red" size="2">&nbsp;*</font>
                         <br />
                         <label for="name">真实姓名 : </label>
                         <input name="name" id="firstname" type="text" 
-                        tabindex="2" />
+                        tabindex="2" /><font color="red" size="2">&nbsp;*</font>
                         <br />
                         <label for="pass">密码 : </label>
                         <input name="pwd" id="pass" type="password" 
-                        tabindex="2" />
+                        tabindex="2" /><font color="red" size="2">&nbsp;*</font>
                         <br />
                         <label for="pass-2">重新输入密码 : </label>
                         <input name="pwd2" id="pass-2" type="password" 
-                        tabindex="2" />
+                        tabindex="2" /><font color="red" size="2">&nbsp;*</font>
                         <br />
                       </fieldset>
                       <fieldset id="address">

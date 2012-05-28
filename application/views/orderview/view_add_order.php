@@ -48,6 +48,54 @@
       $.datepicker.setDefaults($.datepicker.regional['zh-CN']);
 });
 </script>
+<script type="text/javascript">
+//非空验证
+function validate_required(field,alerttxt)
+{
+	with (field)
+  	{
+  		if (value==null||value=="")
+    		{
+    			alert(alerttxt);
+    			return false
+    		}
+  		else 
+  	  		{
+  	  			return true
+  	  		}
+  	}
+}
+
+function validate_form(thisform)
+{
+	with (thisform)
+  	{
+  		if (validate_required(loginname,"用户名不能为空!")==false)
+    	{
+  	    	loginname.focus();
+  	    	return false
+  		}
+  		if (validate_required(name,"真实姓名不能为空!")==false)
+    	{
+  	    	name.focus();
+  	    	return false
+  		}
+  		if (validate_required(pwd,"密码不能为空!")==false)
+    	{
+  	    	pwd.focus();
+  	    	return false
+  		}
+  		if (validate_password(pwd,pwd2,"密码不一致，请重新输入")==false)
+  		{
+			pwd2.focus();
+			return false;
+  	  	}
+
+	}
+}
+
+</script>
+
 <script>
    var StyleFile = "theme" + document.cookie.charAt(6) + ".css";
    document.writeln('<link rel="stylesheet" type="text/css" href="http://localhost/xszl/css/' + StyleFile + '">');
