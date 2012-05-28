@@ -1,0 +1,192 @@
+"General"
+{
+"ProjectIdGuid" = "{3BC331AA-C0DC-4356-B78E-B59FAAF4D747}"
+"ProjectVersion" = "2.1.3.3161"
+}
+"Configurations"
+{
+    "Local|PHP 4"
+    {
+    "IncludeDirs" = ""
+    }
+    "Local|PHP 5"
+    {
+    "IncludeDirs" = ""
+    }
+    "Remote|PHP 4"
+    {
+    "IncludeDirs" = ""
+    }
+    "Remote|PHP 5"
+    {
+    "IncludeDirs" = ""
+    }
+}
+"Files"
+{
+    "chinese\\chinese.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "chinese\\ex.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1250.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1251.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1252.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1253.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1254.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1255.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1257.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp1258.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\cp874.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-1.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-11.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-15.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-16.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-2.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-4.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-5.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-7.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\iso-8859-9.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\koi8-r.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\koi8-u.map"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\makefont\\makefont.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\courier.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\helvetica.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\helveticab.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\helveticabi.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\helveticai.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\symbol.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\times.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\timesb.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\timesbi.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\timesi.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "font\\zapfdingbats.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "fpdf.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "gif.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "html2fpdf.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "htmltoolkit.php"
+    {
+    "ProjRelPath" = "T"
+    }
+    "index.php"
+    {
+    "ProjRelPath" = "T"
+    }
+}
+"ProjStartupServices"
+{
+}
+"Globals"
+{
+}
+"References"
+{
+}
