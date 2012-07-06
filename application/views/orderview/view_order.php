@@ -23,9 +23,9 @@
         <div id="wrapper">
             <div id="content">
             <div id="rightnow">
-                    <h3 class="reallynow">
+                    <h3>
               
-                        <a href="<?php echo site_url('ordercon/con_order/add');?>" class="add">添加用户</a>
+                        <a href="<?php echo site_url('ordercon/con_order/add');?>" class="add">添加订单</a>
                         <br />
                     </h3>
 			  </div>

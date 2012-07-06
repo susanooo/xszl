@@ -10,6 +10,12 @@ class Con_main extends CI_Controller {
 	
 	function main()
 	{
+		//$params[''] =  ;
+		
+		
+		$this->load->library('Chart');
+		$this->chart->drawLineChart();
+		
 		if(!isset($_SESSION))
 		{
     		session_start();

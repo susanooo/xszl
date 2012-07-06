@@ -1,6 +1,8 @@
 <?php
 	$this->load->helper('url');
 ?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -19,17 +21,13 @@
 
 <body>
  <div id="container">
-	<?php include("view_menu.php"); ?> 
+	<?php include("view_menu.php"); ?>
         <div id="wrapper">
             <div id="content">
               <div id="infowrap">
-              <div id="infobox">
-                    <h3>Sales for July</h3>
-                    <p><img src="http://localhost/xszl/img/graph.jpg" width="360" height="266" /></p>            
-                  </div>
-                  <div id="infobox" class="margin-left">
-                    <h3>Traffic for July</h3> 
-                    <p><img src="http://localhost/xszl/img/graph2.jpg" alt="a" width="359" height="266" /></p>
+              	  <div id="infobox2">
+                    
+                    <p><img src="http://localhost/xszl/img/user.LineChart.reversed.png" width="730" height="266" /></p>            
                   </div>
                   <div id="infobox">
                     <h3>Last 5 Orders</h3>
